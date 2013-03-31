@@ -1,0 +1,81 @@
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+/* ------------------------------------------------------------------------- */
+
+#content{
+  position: relative;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Hides overflow to give "window" to see slides through. */
+#slideshow{
+  overflow: hidden;
+  width: 400px;
+  height: 600px;
+}
+
+/* Very wide. Moves to the left/right with Prev/Next buttons. */
+#slide_container{
+  position: relative;
+  left: 0;
+  width: 2400px;
+  height: 600px;
+}
+
+.slide{
+  float: left;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Absolute position - but relative to `.slide`. */
+.popup{
+  position: absolute;
+}
+
+.trigger{
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.test .trigger{
+  border: 1px solid cyan;
+}
+
+.bubble{
+  display: none;
+  background: #fff;
+  padding: 5px;
+  width: 200px;
+  position: relative;
+  top: -30px;
+  left: 30px;
+  z-index: 5;
+  border: 1px solid #999;
+}
+
+.bubble .image{
+  float: left;
+}
+
+.bubble .content{
+  float: right;
+  width: 160px;
+}
+
+.slide_info{
+  position: relative;
+  top: 520px;
+}
