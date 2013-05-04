@@ -9,33 +9,89 @@
 
 /* ------------------------------------------------------------------------- */
 
+body{
+  margin: 0;
+  padding: 0;
+  background: #877A69;
+}
+
+a{
+  color: #443b2d;
+}
+
 #content{
   position: relative;
+  background: url(images/bg.png);
+  width: 899px;
+  margin: 0 auto;
+}
+#bottom{
+  background: url(images/bg_bottom.png);
+  width: 899px;
+  height: 120px;
+  margin: 0 auto;
 }
 
 /* ------------------------------------------------------------------------- */
 
+#white{
+  padding-top: 279px;
+  padding-bottom: 30px;
+  width: 761px;
+  margin: 0 auto;
+}
+#white_1{
+  background: url(images/white_1.png);
+  height: 38px;
+}
+#white_3{
+  background: url(images/white_3.png);
+  height: 44px;
+}
+#white_2{
+  background: url(images/white_2.png) repeat-y;
+}
+
 /* Hides overflow to give "window" to see slides through. */
 #slideshow{
   overflow: hidden;
-  width: 400px;
-  height: 600px;
+  width: 500px;
+  margin: 0 auto;
 }
 
 /* Very wide. Moves to the left/right with Prev/Next buttons. */
 #slide_container{
   position: relative;
   left: 0;
-  width: 2400px;
-  height: 600px;
+  width: 6500px;
 }
 
 .slide{
   float: left;
-  width: 400px;
-  height: 600px;
+  width: 500px;
   position: relative;
   background-repeat: no-repeat;
+  background-size: 500px;
+}
+
+#prev, #next{
+  display: block;
+  position: absolute;
+  z-index: 999;
+  overflow: hidden;
+  width: 51px;
+  height: 0;
+  padding-top: 51px;
+  top: 600px;
+  left: 50%;
+}
+#prev{
+  background: url('images/l.png');
+  margin-left: -361px;
+}
+#next{
+  background: url('images/r.png');
+  margin-left: 313px;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -51,7 +107,7 @@
   height: 40px;
 }
 .test .trigger{
-  border: 1px solid cyan;
+/*  border: 1px solid cyan;*/
 }
 
 .bubble{
@@ -76,6 +132,19 @@
 }
 
 .slide_info{
-  position: relative;
-  top: 520px;
+  position: absolute;
+  bottom: 0;
+}
+
+.slide_info strong{
+  font-family: Arial;
+  font-size: 24px;
+  color: #e26926;
+}
+
+.slide_info p{
+  font-family: Arial;
+  font-size: 12px;
+  color: #443b2d;
+  line-height: 1.4;
 }

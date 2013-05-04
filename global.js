@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $("#prev").on('click', function(e){
     $("#slide_container").animate({
-      left: '+=400'
+      left: '+=500'
     }, 300);
     
     e.preventDefault();
@@ -9,7 +9,7 @@ $(document).ready(function(){
   
   $("#next").on('click', function(e){
     $("#slide_container").animate({
-      left: '-=400'
+      left: '-=500'
     }, 300);
     
     e.preventDefault();
