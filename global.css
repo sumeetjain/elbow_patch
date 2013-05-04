@@ -119,7 +119,9 @@ a{
   top: -30px;
   left: 30px;
   z-index: 5;
-  border: 1px solid #999;
+  box-shadow: 1px 3px 3px #333;
+  border: 1px solid #666;
+  border-radius: 10px;
 }
 
 .bubble .image{
@@ -127,8 +129,20 @@ a{
 }
 
 .bubble .content{
-  float: right;
-  width: 160px;
+  margin: 5px 10px;
+}
+
+.bubble strong{
+  color: #e26926;
+  font-family: Arial;
+  font-size: 11px;
+}
+.bubble span{
+  color: #443b2d;
+  font-family: Arial;
+  font-size: 15px;
+  display: block;
+  margin: 7px 0;
 }
 
 .slide_info{
@@ -148,3 +162,4 @@ a{
   color: #443b2d;
   line-height: 1.4;
 }
+
