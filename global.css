@@ -72,6 +72,7 @@ a{
   position: relative;
   background-repeat: no-repeat;
   background-size: 500px;
+  height: 500px;
 }
 
 #prev, #next{
@@ -163,3 +164,8 @@ a{
   line-height: 1.4;
 }
 
+.slide_info img{
+  float: right;
+/*  position: relative;*/
+/*  top: -20px;*/
+}
