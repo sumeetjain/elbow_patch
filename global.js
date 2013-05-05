@@ -1,8 +1,10 @@
 $(document).ready(function(){
+  var speed = 750;
+  
   $("#prev").on('click', function(e){
     $("#slide_container").animate({
       left: '+=500'
-    }, 300);
+    }, speed);
     
     e.preventDefault();
   });
@@ -10,7 +12,7 @@ $(document).ready(function(){
   $("#next").on('click', function(e){
     $("#slide_container").animate({
       left: '-=500'
-    }, 300);
+    }, speed);
     
     e.preventDefault();
   });
