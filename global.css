@@ -115,7 +115,7 @@ a{
   display: none;
   background: #fff;
   padding: 5px;
-  width: 200px;
+  width: 228px;
   position: relative;
   top: -30px;
   left: 30px;
@@ -127,10 +127,15 @@ a{
 
 .bubble .image{
   float: left;
+  position: relative;
+  top: 8px;
+  left: 6px;
 }
 
 .bubble .content{
+  float: right;
   margin: 5px 10px;
+  width: 160px;
 }
 
 .bubble strong{
