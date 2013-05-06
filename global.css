@@ -147,7 +147,7 @@ a{
 .bubble strong{
   color: #e26926;
   font-family: Arial;
-  font-size: 11px;
+  font-size: 12px;
 }
 .bubble p{
   font-family: Arial;
@@ -184,4 +184,11 @@ a{
   float: right;
   position: relative;
   top: -20px;
+}
+
+.related{
+  color: #999;
+  margin-top: 10px;
+  font-size: 11px;
+  font-family: Arial;
 }
